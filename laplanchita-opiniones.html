@@ -717,12 +717,12 @@
     <!-- 7. CANTANTES / ENTRETENIMIENTO -->
     <div class="section">
       <div class="section-title"><span class="icon">🎤</span> Entretenimiento</div>
-      <div class="toggle-wrap">
-        <label class="toggle">
-          <input type="checkbox" id="toggle-cantantes" onchange="toggleCantantes(this)">
-          <span class="toggle-slider"></span>
-        </label>
-        <span class="toggle-label">¿Hubo cantantes / show esta noche?</span>
+      <div class="field">
+        <label style="display:block;font-size:.82rem;font-weight:600;text-transform:uppercase;letter-spacing:.08em;color:var(--texto-muted);margin-bottom:8px;">¿Hubo cantantes / show esta noche?</label>
+        <div class="options-row" id="opts-cantantes">
+          <div class="opt-btn" onclick="selCant(this,'Sí')">🎤 Sí</div>
+          <div class="opt-btn" onclick="selCant(this,'No')">🚫 No</div>
+        </div>
       </div>
       <div class="cantantes-extra" id="cantantes-extra">
         <div class="field">

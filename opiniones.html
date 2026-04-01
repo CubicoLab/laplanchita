@@ -838,6 +838,12 @@
   }
 
   // ── STARS ──
+  function selCant(el, val) {
+    document.querySelectorAll('#opts-cantantes .opt-btn').forEach(b => b.classList.remove('selected'));
+    el.classList.add('selected');
+    state.cantantes = (val === 'Sí');
+    document.getElementById('cantantes-extra').classList.toggle('visible', val === 'Sí');
+  }
   function setStar(group, val) {
     state.estrellas[group] = val;
     const container = document.getElementById('stars-' + group);
